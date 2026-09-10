@@ -1627,7 +1627,7 @@ h3 strong {
 
 
     .hero-image {
-        width: min(100%, 380px);
+        width: min(78%, 285px);
         justify-self: center;
     }
 
@@ -1643,7 +1643,7 @@ h3 strong {
 
 
     .about-image {
-        width: min(100%, 380px);
+        width: min(78%, 285px);
         margin: 0 auto;
     }
 
@@ -1691,7 +1691,8 @@ h3 strong {
 
 
     .gallery-item img {
-        min-height: 210px;
+        min-height: 0;
+        aspect-ratio: 0.82;
     }
 
 
@@ -1895,7 +1896,8 @@ h3 strong {
 
 
     .gallery-item img {
-        min-height: 170px;
+        min-height: 0;
+        aspect-ratio: 0.82;
     }
 
 
