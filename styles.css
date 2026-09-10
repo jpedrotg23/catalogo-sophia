@@ -1,0 +1,1938 @@
+/* =========================================================
+   SOPHIA BARBOSA MAKEUP
+   CATÁLOGO DIGITAL
+   ========================================================= */
+
+
+/* =========================================================
+   VARIÁVEIS
+   ========================================================= */
+
+:root {
+
+    --white: #ffffff;
+    --off-white: #f8f6f3;
+    --light-gray: #eeeeec;
+    --gray: #d9d6d2;
+    --dark-gray: #343331;
+    --charcoal: #22211f;
+    --black: #161513;
+
+    --gold: #b9975b;
+    --gold-light: #d6bd88;
+    --gold-dark: #8d713d;
+
+    --burgundy: #641f2c;
+    --burgundy-dark: #45141e;
+
+    --text: #373532;
+    --text-light: #77736d;
+
+    --border: rgba(185, 151, 91, 0.28);
+
+    --container: 1180px;
+
+    --transition: 0.3s ease;
+
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text);
+    background: var(--off-white);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+button {
+    font-family: inherit;
+}
+
+
+.container {
+    width: min(92%, var(--container));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   TIPOGRAFIA
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+
+h1 strong,
+h2 span,
+h3 strong {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+
+.section-label,
+.eyebrow {
+    display: block;
+    color: var(--gold-dark);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+}
+
+
+.gold-line {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 25px 0;
+}
+
+
+.gold-line.centered {
+    margin: 25px auto;
+}
+
+
+.section-heading {
+    margin-bottom: 55px;
+}
+
+
+.section-heading.center {
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.section-heading h2 {
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    margin-top: 12px;
+}
+
+
+.section-heading p {
+    color: var(--text-light);
+    max-width: 600px;
+}
+
+
+.section-heading.center p {
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+
+.nav-container {
+    min-height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+
+.brand-text span {
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+
+.brand-text small {
+    margin-top: 5px;
+    color: var(--gold-dark);
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+}
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+
+.nav-menu a {
+    position: relative;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text);
+    transition: var(--transition);
+}
+
+
+.nav-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: var(--transition);
+}
+
+
+.nav-menu a:hover {
+    color: var(--gold-dark);
+}
+
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   BOTÕES
+   ========================================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 0 26px;
+    border: 1px solid transparent;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+
+.btn-primary {
+    background: var(--burgundy);
+    color: var(--white);
+}
+
+
+.btn-primary:hover {
+    background: var(--burgundy-dark);
+    transform: translateY(-2px);
+}
+
+
+.btn-outline {
+    border-color: rgba(255, 255, 255, 0.55);
+    color: var(--white);
+}
+
+
+.btn-outline:hover {
+    background: var(--white);
+    color: var(--charcoal);
+}
+
+
+.btn-outline-dark {
+    border-color: var(--gold);
+    color: var(--burgundy);
+}
+
+
+.btn-outline-dark:hover {
+    background: var(--burgundy);
+    border-color: var(--burgundy);
+    color: var(--white);
+}
+
+
+.btn-whatsapp {
+    background: #ffffff;
+    color: var(--burgundy);
+}
+
+
+.btn-whatsapp:hover {
+    background: var(--gold);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    background: var(--charcoal);
+    color: var(--white);
+    overflow: hidden;
+    padding-top: 84px;
+}
+
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(185, 151, 91, 0.12),
+            transparent 32%
+        ),
+        linear-gradient(
+            110deg,
+            #201f1d 0%,
+            #2d2b28 55%,
+            #191816 100%
+        );
+}
+
+
+.hero-content {
+    min-height: calc(100vh - 84px);
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    align-items: center;
+    gap: 70px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero-text {
+    max-width: 600px;
+}
+
+
+.eyebrow {
+    color: var(--gold-light);
+}
+
+
+.hero h1 {
+    margin-top: 18px;
+    font-size: clamp(4.5rem, 10vw, 8rem);
+    letter-spacing: -0.04em;
+}
+
+
+.hero h1 strong {
+    display: inline-block;
+}
+
+
+.hero-text p {
+    max-width: 500px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 1rem;
+}
+
+
+.hero-text p strong {
+    color: var(--gold-light);
+}
+
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 35px;
+}
+
+
+.hero-image {
+    position: relative;
+    width: min(100%, 470px);
+    justify-self: end;
+}
+
+
+.hero-image img {
+    width: 100%;
+    aspect-ratio: 0.78;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border-radius: 24px;
+}
+
+
+.hero-image-frame {
+    position: absolute;
+    inset: 18px;
+    border: 1px solid var(--gold);
+    z-index: 1;
+    opacity: 0.7;
+    border-radius: 24px;
+}
+
+
+.section {
+    padding: 110px 0;
+}
+
+
+.certificate-section {
+    background: var(--white);
+}
+
+
+.certificate-layout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.certificate-content {
+    max-width: 620px;
+}
+
+
+.certificate-content h2 {
+    margin-top: 15px;
+    font-size: clamp(2.8rem, 5vw, 4.4rem);
+}
+
+
+.certificate-content p {
+    max-width: 520px;
+    color: var(--text-light);
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   SOBRE
+   ========================================================= */
+
+.about {
+    background: var(--off-white);
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 100px;
+    align-items: center;
+}
+
+
+.about-image {
+    position: relative;
+    width: min(100%, 450px);
+}
+
+
+.about-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    aspect-ratio: 0.82;
+    object-fit: cover;
+}
+
+
+.image-decoration {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: -22px;
+    bottom: -22px;
+    border: 1px solid var(--gold);
+}
+
+
+.about-content h2 {
+    font-size: clamp(2.8rem, 5vw, 4.4rem);
+    margin-top: 15px;
+}
+
+
+.about-content p {
+    max-width: 680px;
+    color: var(--text-light);
+    margin-bottom: 17px;
+}
+
+
+/* =========================================================
+   ESTILO
+   ========================================================= */
+
+.style-section {
+    background: var(--white);
+}
+
+
+.style-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+}
+
+
+.style-card {
+    padding: 55px 45px;
+    text-align: center;
+    background: var(--white);
+}
+
+
+.style-card + .style-card {
+    border-left: 1px solid var(--border);
+}
+
+
+.style-card.featured {
+    background: var(--charcoal);
+    color: var(--white);
+}
+
+
+.style-icon {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 24px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    border-radius: 50%;
+}
+
+
+.style-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+
+.style-card p {
+    color: var(--text-light);
+    max-width: 340px;
+    margin: auto;
+}
+
+
+.style-card.featured p {
+    color: rgba(255, 255, 255, 0.68);
+}
+
+
+/* =========================================================
+   GALERIA
+   ========================================================= */
+
+.gallery-section {
+    background: var(--off-white);
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    background: var(--gray);
+}
+
+
+.gallery-item:nth-child(1),
+.gallery-item:nth-child(8) {
+    grid-row: span 2;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    min-height: 270px;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   SERVIÇOS
+   ========================================================= */
+
+.services-section {
+    background: var(--white);
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+.service-card {
+    position: relative;
+    padding: 45px;
+    border: 1px solid var(--border);
+    background: var(--off-white);
+}
+
+
+.service-card.featured-service {
+    background: var(--charcoal);
+    color: var(--white);
+    border-color: var(--charcoal);
+}
+
+
+.service-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--gold);
+    color: var(--white);
+    padding: 6px 11px;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+
+.service-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+.service-number {
+    color: var(--gold);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+
+.service-top > i {
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
+
+.service-type {
+    color: var(--gold-dark);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+
+.featured-service .service-type {
+    color: var(--gold-light);
+}
+
+
+.service-card h3 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+
+.service-card h3 strong {
+    display: block;
+}
+
+
+.price {
+    margin-top: 28px;
+    color: var(--burgundy);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+
+.featured-service .price {
+    color: var(--gold-light);
+}
+
+
+.price small {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    vertical-align: top;
+}
+
+
+.price span {
+    font-size: 2rem;
+}
+
+
+.service-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 30px 0;
+}
+
+
+.service-list {
+    list-style: none;
+    display: grid;
+    gap: 13px;
+    margin-bottom: 30px;
+}
+
+
+.service-list li {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 0.82rem;
+    color: var(--text-light);
+}
+
+
+.featured-service .service-list li {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+.service-list i {
+    color: var(--gold);
+}
+
+
+.service-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+    color: var(--burgundy);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+.featured-service .service-button {
+    color: var(--gold-light);
+}
+
+
+.service-button:hover {
+    color: var(--gold);
+}
+
+
+.service-note {
+    margin-bottom: 25px;
+    padding: 12px 15px;
+    background: rgba(185, 151, 91, 0.08);
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.72rem;
+}
+
+
+.extra-fee {
+    max-width: 950px;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 25px 30px;
+    background: #f5eee9;
+    border-left: 3px solid var(--burgundy);
+}
+
+
+.extra-fee-icon {
+    color: var(--burgundy);
+    font-size: 1.4rem;
+}
+
+
+.extra-fee span {
+    color: var(--burgundy);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+
+.extra-fee h3 {
+    margin: 4px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+
+.extra-fee p {
+    color: var(--text-light);
+    font-size: 0.76rem;
+}
+
+
+/* =========================================================
+   ATENDIMENTO DOMICÍLIO
+   ========================================================= */
+
+.home-service {
+    background: var(--charcoal);
+    color: var(--white);
+}
+
+
+.home-service .section-label {
+    color: var(--gold-light);
+}
+
+
+.home-service .section-heading h2 {
+    color: var(--white);
+}
+
+
+.home-service .section-heading p {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.requirement {
+    padding: 38px 28px;
+    background: var(--charcoal);
+}
+
+
+.requirement-icon {
+    color: var(--gold);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+
+.requirement h3 {
+    color: var(--white);
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+
+.requirement p {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.76rem;
+}
+
+
+.location-box {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 30px;
+    border: 1px solid rgba(185, 151, 91, 0.35);
+}
+
+
+.location-icon {
+    color: var(--gold);
+    font-size: 1.8rem;
+}
+
+
+.location-box span {
+    color: var(--gold-light);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+
+.location-box h3 {
+        font-size: 1.7rem;
+}
+
+
+.location-box p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.76rem;
+}
+
+
+/* =========================================================
+   BAIRROS
+   ========================================================= */
+
+.neighborhoods-section {
+    padding: 90px 0;
+    background: var(--burgundy);
+    color: var(--white);
+}
+
+
+.neighborhoods-section .section-label {
+    color: var(--gold-light);
+}
+
+
+.neighborhoods-section h2 {
+    color: var(--white);
+    font-size: clamp(2.4rem, 5vw, 3.7rem);
+}
+
+
+.neighborhood-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+.neighborhood-list span {
+    padding: 10px 17px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+}
+
+
+.neighborhood-note {
+    margin-top: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.75rem;
+}
+
+
+/* =========================================================
+   AGENDAMENTO
+   ========================================================= */
+
+.booking-section {
+    background: var(--off-white);
+}
+
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+
+.step {
+    position: relative;
+    padding: 40px 30px;
+    background: var(--white);
+    border: 1px solid var(--border);
+}
+
+
+.step-number {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    color: var(--gray);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+}
+
+
+.step-icon {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    background: rgba(185, 151, 91, 0.1);
+    color: var(--gold-dark);
+}
+
+
+.step h3 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+
+.step p {
+    color: var(--text-light);
+    font-size: 0.78rem;
+}
+
+
+.booking-cta {
+    margin-top: 55px;
+    padding: 35px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: var(--charcoal);
+    color: var(--white);
+}
+
+
+.booking-cta span {
+    color: var(--gold-light);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+
+.booking-cta h3 {
+    margin-top: 5px;
+    font-size: 2rem;
+}
+
+
+/* =========================================================
+   PAGAMENTO
+   ========================================================= */
+
+.payment-section {
+    padding: 70px 0;
+    background: var(--white);
+}
+
+
+.payment-content {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.payment-content h2 {
+    font-size: 2.8rem;
+    margin-top: 8px;
+}
+
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.payment-item {
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid var(--border);
+    color: var(--text-light);
+}
+
+
+.payment-item i {
+    color: var(--gold-dark);
+    font-size: 1.3rem;
+}
+
+
+.payment-item span {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.payment-note {
+    margin-top: 25px;
+    text-align: right;
+    color: var(--text-light);
+    font-size: 0.7rem;
+}
+
+
+/* =========================================================
+   POLÍTICAS
+   ========================================================= */
+
+.policies-section {
+    background: var(--off-white);
+}
+
+
+.policies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+
+.policy-card {
+    position: relative;
+    padding: 40px 28px;
+    background: var(--white);
+    border: 1px solid var(--border);
+}
+
+
+.policy-number {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    color: var(--gray);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+}
+
+
+.policy-icon {
+    color: var(--gold-dark);
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+
+.policy-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+
+.policy-card p {
+    color: var(--text-light);
+    font-size: 0.75rem;
+}
+
+
+/* =========================================================
+   CONTATO
+   ========================================================= */
+
+.contact-section {
+    padding: 110px 0;
+    background:
+        linear-gradient(
+            110deg,
+            var(--charcoal),
+            #292724
+        );
+    color: var(--white);
+}
+
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+
+.contact-content h2 {
+    margin-top: 12px;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+}
+
+
+.contact-content p {
+    max-width: 500px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+
+.contact-content .section-label {
+    color: var(--gold-light);
+}
+
+
+.contact-links {
+    display: grid;
+    gap: 12px;
+}
+
+
+.contact-link {
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+
+.contact-link:hover {
+    border-color: rgba(185, 151, 91, 0.55);
+    transform: translateX(5px);
+}
+
+
+.contact-link-icon {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+}
+
+
+.contact-link span {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--gold-light);
+    font-size: 0.57rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+
+.contact-link strong {
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+
+.contact-link > i {
+    color: var(--gold);
+    font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    background: var(--black);
+    color: var(--white);
+}
+
+
+.footer-content {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.footer-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+
+.footer-brand h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+
+.footer-brand span {
+    color: var(--gold);
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--gold-light);
+    transition: var(--transition);
+}
+
+
+.footer-social a:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--white);
+}
+
+
+.footer-bottom {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.62rem;
+}
+
+
+.footer-bottom a {
+    color: var(--gold-light);
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+
+.footer-bottom a i {
+    margin-left: 7px;
+}
+
+
+/* =========================================================
+   WHATSAPP FLUTUANTE
+   ========================================================= */
+
+.floating-whatsapp {
+    position: fixed;
+    z-index: 999;
+    right: 22px;
+    bottom: 22px;
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #25d366;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+    transition: var(--transition);
+}
+
+
+.floating-whatsapp:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+
+    .nav-menu a {
+        font-size: 0.62rem;
+    }
+
+
+    .hero-content {
+        grid-template-columns: 1fr 0.8fr;
+        gap: 40px;
+    }
+
+
+    .about-grid {
+        gap: 60px;
+    }
+
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .requirements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .policies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .contact-container {
+        gap: 60px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — CELULAR
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    /* -----------------------------------------
+       GERAL
+       ----------------------------------------- */
+
+    .container {
+        width: min(90%, 600px);
+    }
+
+
+    .section {
+        padding: 75px 0;
+    }
+
+
+    .btn {
+        min-height: 48px;
+        padding: 0 20px;
+        font-size: 0.64rem;
+        letter-spacing: 0.06em;
+    }
+
+
+    /* -----------------------------------------
+       HEADER
+       ----------------------------------------- */
+
+    .nav-container {
+        min-height: 72px;
+    }
+
+
+    .menu-toggle {
+        display: block;
+        z-index: 1002;
+    }
+
+
+    .nav-menu {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+
+        transform: translateY(-120%);
+        opacity: 0;
+        pointer-events: none;
+
+        transition:
+            transform 0.35s ease,
+            opacity 0.35s ease;
+    }
+
+
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+
+    .nav-menu a {
+        font-size: 0.72rem;
+    }
+
+
+    /* -----------------------------------------
+       HERO
+       ----------------------------------------- */
+
+    .hero {
+        min-height: auto;
+        padding-top: 72px;
+    }
+
+
+    .hero-content {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        gap: 55px;
+        padding-top: 75px;
+        padding-bottom: 80px;
+    }
+
+
+    .hero-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    .hero .gold-line {
+        margin: 22px auto;
+    }
+
+
+    .hero-text p {
+        margin: 0 auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+        gap: 12px;
+    }
+
+
+    .hero-buttons .btn,
+    .booking-cta .btn,
+    .contact-content .btn {
+        width: 100%;
+    }
+
+
+    .hero-image {
+        width: min(100%, 380px);
+        justify-self: center;
+    }
+
+
+    /* -----------------------------------------
+       SOBRE
+       ----------------------------------------- */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+
+    .about-image {
+        width: min(100%, 380px);
+        margin: 0 auto;
+    }
+
+
+    .about-content {
+        text-align: center;
+    }
+
+
+    .about-content .gold-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* -----------------------------------------
+       ESTILO
+       ----------------------------------------- */
+
+    .style-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .style-card + .style-card {
+        border-left: 0;
+        border-top: 1px solid var(--border);
+    }
+
+
+    /* -----------------------------------------
+       GALERIA
+       ----------------------------------------- */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(8) {
+        grid-row: span 1;
+    }
+
+
+    .gallery-item img {
+        min-height: 210px;
+    }
+
+
+    /* -----------------------------------------
+       SERVIÇOS
+       ----------------------------------------- */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-card {
+        padding: 35px 25px;
+    }
+
+
+    .service-card h3 {
+        font-size: 2rem;
+    }
+
+
+    .service-button {
+        font-size: 0.62rem;
+        gap: 10px;
+    }
+
+
+    .price {
+        font-size: 3rem;
+    }
+
+
+    .extra-fee {
+        align-items: flex-start;
+        padding: 22px;
+    }
+
+
+    /* -----------------------------------------
+       DOMICÍLIO
+       ----------------------------------------- */
+
+    .requirements-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .requirement {
+        padding: 28px 20px;
+    }
+
+
+    .location-box {
+        align-items: flex-start;
+        padding: 25px;
+    }
+
+
+    /* -----------------------------------------
+       AGENDAMENTO
+       ----------------------------------------- */
+
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    .booking-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 25px;
+    }
+
+
+    /* -----------------------------------------
+       PAGAMENTO
+       ----------------------------------------- */
+
+    .payment-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+    .payment-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .payment-note {
+        text-align: left;
+    }
+
+
+    /* -----------------------------------------
+       POLÍTICAS
+       ----------------------------------------- */
+
+    .policies-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -----------------------------------------
+       CONTATO
+       ----------------------------------------- */
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+
+    .contact-content {
+        text-align: center;
+    }
+
+
+    .contact-content .gold-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .contact-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .contact-link {
+        grid-template-columns: 42px 1fr auto;
+        gap: 12px;
+        padding: 16px 14px;
+    }
+
+
+    .contact-link strong {
+        font-size: 0.68rem;
+        word-break: break-word;
+    }
+
+
+    .contact-link span {
+        letter-spacing: 0.12em;
+    }
+
+
+    /* -----------------------------------------
+       FOOTER
+       ----------------------------------------- */
+
+    .footer-content {
+        min-height: auto;
+        padding: 35px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .footer-bottom {
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — CELULAR PEQUENO
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+    .brand-text {
+        display: none;
+    }
+
+
+    .hero h1 {
+        font-size: 3.4rem;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .gallery-item img {
+        min-height: 170px;
+    }
+
+
+    .requirements-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .payment-methods {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .contact-link {
+        grid-template-columns: 42px 1fr auto;
+        gap: 10px;
+        padding: 15px;
+    }
+
+
+    .contact-link-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .contact-link strong {
+        font-size: 0.68rem;
+        word-break: break-word;
+    }
+
+
+    .floating-whatsapp {
+        right: 15px;
+        bottom: 15px;
+        width: 52px;
+        height: 52px;
+    }
+
+}
