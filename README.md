@@ -1,57 +1,119 @@
 # Sophia Barbosa Makeup — Catálogo Digital
 
-Site desenvolvido para apresentar o trabalho, os serviços e as informações profissionais de Sophia Barbosa Makeup.
+Catálogo digital desenvolvido para apresentar o trabalho, os serviços e as informações profissionais de Sophia Barbosa Makeup.
 
-🌐 **[Acessar o catálogo publicado](https://jpedrotg23.github.io/catalogo-sophia/)**
+🌐 **[Acessar o catálogo](https://sophiabarbosa.pages.dev/)**
 
-## Objetivo
+## Sobre o projeto
 
-Reunir em um único endereço as principais informações da profissional, facilitando que visitantes conheçam seu trabalho, consultem os serviços e encontrem orientações para agendamento.
+O catálogo reúne em um único endereço as informações da profissional, sua identidade visual, seus trabalhos e os detalhes necessários para que visitantes conheçam os serviços e encontrem os canais de contato.
 
 ## Conteúdo e recursos
 
 - Apresentação da profissional e identidade visual.
-- Informações sobre formação e certificado.
-- Galeria de estilos e trabalhos de maquiagem.
+- Informações sobre trajetória e formação profissional.
+- Acesso ao certificado em PDF.
+- Galeria com trabalhos de maquiagem.
 - Serviços, modalidades de atendimento e preços.
+- Informações sobre atendimento em Fortaleza e regiões atendidas.
 - Orientações para agendamento.
-- Informações sobre formas de pagamento.
-- Políticas de atendimento.
-- Informações de localização e regiões atendidas.
-- Canais de contato.
+- Formas de pagamento e políticas de atendimento.
+- Links diretos para WhatsApp e redes sociais.
+- Layout responsivo para celulares, tablets e computadores.
+- Animações sutis e visualização ampliada das fotografias.
+
+## Serviços
+
+| Serviço | Valor |
+|---|---:|
+| Maquiagem no Studio | R$ 150,00 |
+| Maquiagem em domicílio | R$ 180,00 |
+| Maquiagem + Waves | R$ 200,00 |
+| Maquiagem + Penteado | A partir de R$ 250,00 |
 
 ## Tecnologias
 
-- HTML5
+- React
+- JavaScript (ES6+)
+- Vite
 - CSS3
-- JavaScript
 - Font Awesome
 - Google Fonts
+- Sharp para otimização de imagens
 
-## Estrutura
+## Estrutura do projeto
 
 ```text
 catalogo-sophia/
-├── README.md
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── assets/                 # Arquivos originais e imagens recebidas
+├── public/
+│   └── assets/             # Imagens otimizadas e documentos publicados
+├── src/
+│   ├── components/         # Componentes reutilizáveis
+│   ├── data/               # Conteúdo e dados do catálogo
+│   ├── styles/             # Estilos globais e da aplicação
+│   ├── App.jsx
+│   └── main.jsx
 ├── index.html
-├── styles.css
-└── assets/
+├── package.json
+├── package-lock.json
+└── vite.config.js
 ```
-
-A estrutura acima representa os principais arquivos; os nomes e conteúdos exatos dos recursos podem variar conforme a versão do repositório.
 
 ## Executar localmente
 
-Não há etapa de build ou dependências Node.js. Clone o repositório e abra `index.html` no navegador. Para desenvolvimento, utilize o Live Server no VS Code.
+### Pré-requisitos
+
+- Node.js
+- npm
+
+### Instalação
 
 ```bash
 git clone https://github.com/jpedrotg23/catalogo-sophia.git
 cd catalogo-sophia
+npm install
 ```
 
-## Compatibilidade
+### Desenvolvimento
 
-O layout foi desenvolvido para apresentar o conteúdo em celulares, tablets e computadores, com navegação adaptada a diferentes larguras de tela.
+```bash
+npm run dev
+```
+
+O Vite exibirá no terminal o endereço local para abrir a aplicação no navegador.
+
+### Build de produção
+
+```bash
+npm run build
+```
+
+### Visualizar o build localmente
+
+```bash
+npm run preview
+```
+
+## Publicação
+
+A publicação principal é realizada pelo **Cloudflare Pages**, conectado ao repositório GitHub.
+
+Configurações utilizadas:
+
+| Campo | Valor |
+|---|---|
+| Branch de produção | `main` |
+| Comando de build | `npm run build` |
+| Diretório de saída | `dist` |
+| Diretório raiz | raiz do repositório |
+
+Novos commits enviados para a branch `main` podem disparar automaticamente uma nova implantação no Cloudflare Pages.
+
+O workflow do GitHub Pages permanece no repositório como alternativa de publicação. O `vite.config.js` diferencia os caminhos de build para preservar essa compatibilidade.
 
 ## Créditos
 
@@ -59,4 +121,5 @@ Desenvolvimento por **João Pedro Teixeira Guimarães** para Sophia Barbosa Make
 
 ---
 
-[Repositório no GitHub](https://github.com/jpedrotg23/catalogo-sophia) · [Site publicado](https://jpedrotg23.github.io/catalogo-sophia/)
+**Catálogo:** https://sophiabarbosa.pages.dev/  
+**Repositório:** https://github.com/jpedrotg23/catalogo-sophia
