@@ -1,38 +1,64 @@
-# Catálogo Digital — Sophia
+# Sophia Barbosa Makeup — Catálogo Digital
 
-Catálogo digital desenvolvido para apresentar os produtos e serviços da Sophia de forma simples, moderna e responsiva.
+Site desenvolvido para apresentar o trabalho, os serviços e as informações profissionais de Sophia Barbosa Makeup.
 
-## 🚀 Tecnologias
+🌐 **[Acessar o catálogo publicado](https://jpedrotg23.github.io/catalogo-sophia/)**
 
-* HTML5
-* CSS3
-* JavaScript
+## Objetivo
 
-## 📱 Compatibilidade
+Reunir em um único endereço as principais informações da profissional, facilitando que visitantes conheçam seu trabalho, consultem os serviços e encontrem orientações para agendamento.
 
-O catálogo foi desenvolvido para funcionar em:
+## Conteúdo e recursos
 
-* 📱 Celulares
-* 💻 Computadores
-* 📲 Tablets
-* 🌐 Diferentes navegadores
+- Apresentação da profissional e identidade visual.
+- Informações sobre formação e certificado.
+- Galeria de estilos e trabalhos de maquiagem.
+- Serviços, modalidades de atendimento e preços.
+- Orientações para agendamento.
+- Informações sobre formas de pagamento.
+- Políticas de atendimento.
+- Informações de localização e regiões atendidas.
+- Canais de contato.
 
-## ✨ Funcionalidades
+## Tecnologias
 
-* Apresentação de produtos e serviços
-* Layout responsivo
-* Navegação simples e intuitiva
-* Catálogo acessível por link
-* Informações de contato
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome
+- Google Fonts
 
-## 🌐 Acesso
+## Estrutura
 
-[**Acessar o Catálogo Online**](https://jpedrotg23.github.io/catalogo-sophia/)
+```text
+catalogo-sophia/
+├── index.html
+├── styles.css
+├── script.js
+└── assets/
+    ├── imagens e identidade visual
+    └── materiais de apoio
+```
 
-## 👨‍💻 Desenvolvimento
+A estrutura acima representa os principais arquivos; os nomes e conteúdos exatos dos recursos podem variar conforme a versão do repositório.
 
-Projeto desenvolvido por **João Pedro Teixeira Guimarães**.
+## Executar localmente
+
+Não há etapa de build ou dependências Node.js. Clone o repositório e abra `index.html` no navegador. Para desenvolvimento, utilize o Live Server no VS Code.
+
+```bash
+git clone https://github.com/jpedrotg23/catalogo-sophia.git
+cd catalogo-sophia
+```
+
+## Compatibilidade
+
+O layout foi desenvolvido para apresentar o conteúdo em celulares, tablets e computadores, com navegação adaptada a diferentes larguras de tela.
+
+## Créditos
+
+Desenvolvimento por **João Pedro Teixeira Guimarães** para Sophia Barbosa Makeup.
 
 ---
 
-⭐ Projeto desenvolvido para uso real e publicação na web.
+[Repositório no GitHub](https://github.com/jpedrotg23/catalogo-sophia) · [Site publicado](https://jpedrotg23.github.io/catalogo-sophia/)
