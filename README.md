@@ -32,12 +32,10 @@ Reunir em um único endereço as principais informações da profissional, facil
 
 ```text
 catalogo-sophia/
+├── README.md
 ├── index.html
 ├── styles.css
-├── script.js
 └── assets/
-    ├── imagens e identidade visual
-    └── materiais de apoio
 ```
 
 A estrutura acima representa os principais arquivos; os nomes e conteúdos exatos dos recursos podem variar conforme a versão do repositório.
